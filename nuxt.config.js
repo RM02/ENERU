@@ -48,6 +48,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    done (builder) {
+      // Copy dist files to public/_nuxt
+      if (builder.nuxt.options.dev === false && builder.nuxt.options.mode === 'spa') {
+        const publicDir = join(builder.nuxt.options.rootDir, 'public', '_nuxt')
+        removeSync(publicDir)
+        copySync(join(builder.nuxt.options.generate.dir, '_nuxt'), publicDir)
+        copySync(join(builder.nuxt.options.generate.dir, '200.html'), join(publicDir, 'index.html'))
+      }
+    }
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
