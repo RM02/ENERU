@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="layout">
     <Header :items="items"/>
-    <Nuxt />
+      <Nuxt />
     <Footer/>
   </div>
 </template>
@@ -15,5 +15,16 @@ export default {
 }
 </script>
 <style scoped>
+.layout {
+  width: 100vw;
+  background: #000;
+}
+
+@media screen and (max-width: 500px)  {
+  .layout {
+    width: 100vw;
+    background: #000;
+  }
+}
 
 </style>

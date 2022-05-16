@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'EVA',
+    title: 'Eneru Technology',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo2.ico' }
     ]
   },
 
@@ -81,5 +81,8 @@ export default {
         }
       }
     }
+  },
+  server: {
+    host: "192.168.8.103"
   }
 }
