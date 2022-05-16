@@ -113,6 +113,7 @@ export default {
     background: linear-gradient(to right,#134285 0%,#65318f 100%);
   }
   .class-video {
+    padding-top: 100px;
     width: 100%;
     height: auto;
   }
