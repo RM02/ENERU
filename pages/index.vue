@@ -1,28 +1,36 @@
 <template>
   <div class="layout">
     <div class="screen">
+      <video loop autoplay class="video-screen">
+        <source src="/world-eneru.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="block">
       <div>
-        <div>
-          <h1 class="title">
-            Acelera el crecimiento
-          <br> de tu empresa con nuestro equipo
-          </h1>
-        </div>
+        <h1 class="title">
+          Acelera el crecimiento
+        <br> de tu empresa con nuestro equipo
+        </h1>
+      </div>
+      <div class="lines">
+        <div class="span1"></div>
+        <div class="span2"></div>
+        <div class="span3"></div>
+      </div>
+    </div>
+    <div class="block">
+      <video loop autoplay class="class-video">
+      <div>
+        <h1 class="title">Visualizamos ser una empresa líder<br> a nivel nacional e internacional</h1>
+        <h3 class="subtitle">Generando valor económico y social con nuestros productos y servicios</h3>
         <div class="lines">
           <div class="span1"></div>
           <div class="span2"></div>
           <div class="span3"></div>
         </div>
       </div>
-    </div>
-    <div class="block">
-      <h1 class="title">Visualizamos ser una empresa líder<br> a nivel nacional e internacional</h1>
-      <h3 class="subtitle">Generando valor económico y social con nuestros productos y servicios</h3>
-      <div class="lines">
-        <div class="span1"></div>
-        <div class="span2"></div>
-        <div class="span3"></div>
-      </div>
+        <source src="/screen.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="block">
       <h1 class="title">Interoperatividad entre organismos</h1>
@@ -34,7 +42,7 @@
       </div>
 
       <div class="text-center">
-        <video controls loop autoplay class="class-video">
+        <video loop autoplay class="class-video">
           <source src="/platform.mp4" type="video/mp4">
         </video>
       </div>
@@ -43,12 +51,21 @@
       </div>
     </div>
     <div class="block">
-      <h1 class="title">Calidad<br> basado en sistemas de gestión</h1>
-      <h3 class="subtitle">Estandares ISO</h3>
-      <div class="lines">
-        <div class="span1"></div>
-        <div class="span2"></div>
-        <div class="span3"></div>
+      <div class="ph">
+          <div style="padding-right: 50px">
+            <h1 class="title">Calidad<br> basado en sistemas de gestión</h1>
+            <h3 class="subtitle">Estandares ISO</h3>
+              <div class="lines">
+                <div class="span1"></div>
+                <div class="span2"></div>
+                <div class="span3"></div>
+              </div>
+          </div>
+          <div class="text-center">
+            <video loop autoplay class="video-pv">
+              <source src="/pdvc.mp4" type="video/mp4">
+            </video>
+          </div>
       </div>
     </div>
   </div>
@@ -105,6 +122,10 @@ export default {
 <style scoped>
   .layout {
     width: 100%;
+    background: black;
+  }
+  .ph {
+    display: flex;
   }
   .span1 {
     height: 5px;
@@ -116,6 +137,14 @@ export default {
     padding-top: 100px;
     width: 100%;
     height: auto;
+  }
+  .video-screen {
+    width: 100%;
+    height: auto;
+  }
+  .video-pv {
+    margin-top: 40px;
+    width: 70%;
   }
   .span2 {
     height: 5px;
@@ -134,25 +163,19 @@ export default {
     grid-template-rows: 5px 5px 5px;
   }
   .screen {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    vertical-align: middle;
-    margin: auto;
-    border-bottom: 1.5px solid gray;
-    padding: 100px;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
   .block {
-    border-bottom: 1.5px solid gray;
+    border-bottom: 5px rgb(24, 24, 24) solid;
     padding: 100px;
     width: 100vw;
+    height: 100%;
   }
   .title {
     font-size: 3.5em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(210, 210, 210);
+    color: rgb(230, 230, 230);
   }
   .screen-title {
     font-size: 3.5em;
@@ -174,17 +197,27 @@ export default {
     width: 100%;
   }
   .screen {
-    padding-top: 40%;
-    padding-left: 35px;
-    border-bottom: 1.5px solid gray;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+  }
+  .ph {
+    display: inline-block;
+  }
+  .video-pv {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .video-screen {
+    width: 100%;
+    height: auto;
   }
   .block {
     padding: 30px;
-    padding-top: 40%;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
 
   .context {
