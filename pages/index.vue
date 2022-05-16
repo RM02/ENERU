@@ -50,11 +50,6 @@
         <div class="span2"></div>
         <div class="span3"></div>
       </div>
-      <div style="margin-top: 40px">
-        <b-button size="lg" variant="dark" class="class-btn">
-          Ver más
-        </b-button>
-      </div>
     </div>
   </div>
 </template>
