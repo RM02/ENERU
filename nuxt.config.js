@@ -83,6 +83,15 @@ export default {
     }
   },
   server: {
-    host: "192.168.8.103"
-  }
+    // host: "192.168.8.103"
+  },
+  ignore: [
+    '.nuxt', // buildDir
+    'static', // dir.static
+    'dist', // generate.dir
+    'node_modules',
+    '.**/*',
+    '.*',
+    'README.md'
+  ]
 }
