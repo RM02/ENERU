@@ -17,9 +17,12 @@
         <div class="span2"></div>
         <div class="span3"></div>
       </div>
+
+      <video loop autoplay class="class-video">
+        <source src="/screen.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="block">
-      <video loop autoplay class="class-video">
       <div>
         <h1 class="title">Visualizamos ser una empresa líder<br> a nivel nacional e internacional</h1>
         <h3 class="subtitle">Generando valor económico y social con nuestros productos y servicios</h3>
@@ -29,8 +32,6 @@
           <div class="span3"></div>
         </div>
       </div>
-        <source src="/screen.mp4" type="video/mp4">
-      </video>
     </div>
     <div class="block">
       <h1 class="title">Interoperatividad entre organismos</h1>

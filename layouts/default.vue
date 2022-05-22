@@ -9,7 +9,20 @@
 export default {
   data: () => {
     return {
-      items: []
+      items: [
+        {
+          name: "Productos",
+          path: "productos"
+        },
+        {
+          name: "Servicios",
+          path: ""
+        },
+        {
+          name: "Contactos",
+          path: ""
+        }
+      ]
     }
   }
 }

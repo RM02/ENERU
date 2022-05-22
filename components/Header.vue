@@ -1,18 +1,23 @@
 <template>
   <div class="header">
     <b-navbar toggleable="lg">
-      <b-navbar-nav>
-        <b-nav-item class="item mr-2" @click="navigate('/')">
+      <b-navbar-brand href="/">
         <img class="logo" src="logo.png">
-        </b-nav-item>
+      </b-navbar-brand>
+    <b-navbar-toggle target="nav-collapse">
+      <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="chevron-bar-up">Menu</b-icon>
+        <b-icon v-else icon="chevron-bar-down">Menu</b-icon>
+      </template>
+    </b-navbar-toggle>
 
-        <b-nav-item v-for="item, index in items" :key="index" class="mr-2" @click="navigate(item.path)">
-          <span class="item">{{ item.name }}</span>
-        </b-nav-item>
-        <b-nav-item>
-
-        </b-nav-item>
-      </b-navbar-nav>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item v-for="item, index in items" :key="index" class="mr-4" @click="navigate(item.path)">
+            <span class="item">{{ item.name }}</span>
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
   </div>
 </template>
@@ -48,6 +53,9 @@ export default {
 .item {
   color: gray;
   font-weight: bold;
+}
+.b-nav-item-dropdown {
+  display: none;
 }
 @media screen and (max-width: 500px)  {
   .header {

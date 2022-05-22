@@ -25,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/middleware/bootstrap.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -83,7 +84,7 @@ export default {
     }
   },
   server: {
-    // host: "192.168.8.103"
+    host: "192.168.8.103"
   },
   ignore: [
     '.nuxt', // buildDir
