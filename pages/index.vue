@@ -5,76 +5,100 @@
         <source src="/world-eneru.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="block">
-      <div>
-        <h1 class="title">
-          Acelera el crecimiento
-        <br> de tu empresa con nuestro equipo
-        </h1>
-      </div>
-      <div class="lines">
-        <div class="span1"></div>
-        <div class="span2"></div>
-        <div class="span3"></div>
-      </div>
+    <div>
+      <div class="block">
+        <b-card no-body class="overflow-hidden">
+          <b-row no-gutters>
+            <b-col md="4">
+              <img src="https://placekitten.com/300/300" alt="">
+            </b-col>
+            <b-col>
+              <b-card-body>
+                <b-card-text>
+                <h1 class="title">
+                    Acelera el crecimiento
+                  <br> de tu empresa con nuestro equipo
+                  </h1>
 
-      <video loop autoplay class="class-video">
-        <source src="/screen.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="block">
-      <div>
-        <h1 class="title">Visualizamos ser una empresa líder<br> a nivel nacional e internacional</h1>
-        <h3 class="subtitle">Generando valor económico y social con nuestros productos y servicios</h3>
-        <div class="lines">
-          <div class="span1"></div>
-          <div class="span2"></div>
-          <div class="span3"></div>
-        </div>
+                  <div class="lines">
+                    <div class="span3"></div>
+                  </div>
+                </b-card-text>
+              </b-card-body>
+            </b-col>
+          </b-row>
+        </b-card>
       </div>
     </div>
     <div class="block">
-      <h1 class="title">Interoperatividad entre organismos</h1>
-      <h3 class="subtitle">Todos bajo un mismo ecosistema</h3>
-      <div class="lines">
-        <div class="span1"></div>
-        <div class="span2"></div>
-        <div class="span3"></div>
-      </div>
-
-      <div class="text-center">
-        <video loop autoplay class="class-video">
-          <source src="/platform.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div style="margin-top: 50px">
-        <h3 class="subtitle">Sobre nuestra plataforma intercambia información y conocimiento en el marco de tus procesos de negocio</h3>
-      </div>
+      <b-card no-body class="overflow-hidden">
+        <b-row no-gutters>
+          <b-col md="4">
+            <img src="https://placekitten.com/300/300" alt="">
+          </b-col>
+          <b-col>
+            <b-card-body>
+              <b-card-text>
+                <h1 class="title">Interoperatividad entre organismos</h1>
+                <h3 class="subtitle">Sobre nuestra plataforma intercambia información y conocimiento en el marco de tus procesos de negocio</h3>
+                  <div class="lines">
+                    <div class="span3"></div>
+                  </div>
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
     </div>
     <div class="block">
-      <div class="ph">
-          <div style="padding-right: 50px">
-            <h1 class="title">Calidad<br> basado en sistemas de gestión</h1>
-            <h3 class="subtitle">Estandares ISO</h3>
-              <div class="lines">
-                <div class="span1"></div>
-                <div class="span2"></div>
-                <div class="span3"></div>
-              </div>
-          </div>
-          <div class="text-center">
-            <video loop autoplay class="video-pv">
+      <b-card no-body class="overflow-hidden">
+        <b-row no-gutters>
+          <b-col md="4">
+            <video loop autoplay class="class-video">
+              <source src="/platform.mp4" type="video/mp4">
+            </video>
+          </b-col>
+          <b-col>
+            <b-card-body>
+              <b-card-text>
+                <h1 class="title">Interoperatividad entre organismos</h1>
+                <h3 class="subtitle">Sobre nuestra plataforma intercambia información y conocimiento en el marco de tus procesos de negocio</h3>
+                  <div class="lines">
+                    <div class="span3"></div>
+                  </div>
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
+    </div>
+    <div class="block">
+      <b-card no-body class="overflow-hidden">
+        <b-row no-gutters>
+          <b-col md="4">
+            <video loop autoplay class="class-video">
               <source src="/pdvc.mp4" type="video/mp4">
             </video>
-          </div>
-      </div>
+          </b-col>
+          <b-col>
+            <b-card-body>
+              <b-card-text>
+                <h1 class="title">Calidad<br>en sistemas de gestión</h1>
+                <h3 class="subtitle">Estandares ISO</h3>
+                  <div class="lines">
+                    <div class="span3"></div>
+                  </div>
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
     </div>
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
-import Footer from '../components/Footer.vue';
 
 export default {
   data: () => {
@@ -123,21 +147,18 @@ export default {
 <style scoped>
   .layout {
     width: 100%;
-    background: black;
+    background: white;
   }
   .ph {
     display: flex;
   }
-  .span1 {
-    height: 5px;
-    width: 160px;
-    margin-bottom: 5px;
-    background: linear-gradient(to right,#134285 0%,#65318f 100%);
+  .card {
+    border: 0px
   }
   .class-video {
     padding-top: 100px;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .video-screen {
     width: 100%;
@@ -145,19 +166,14 @@ export default {
   }
   .video-pv {
     margin-top: 40px;
-    width: 70%;
-  }
-  .span2 {
-    height: 5px;
-    width: 350px;
-    margin-bottom: 5px;
-    background: linear-gradient(to right,#134285 0%,#65318f 100%);
+    width: 80%;
+    vertical-align: middle;
   }
   .span3 {
     height: 5px;
-    width: 500px;
+    width: 80%;
     margin-bottom: 5px;
-    background: linear-gradient(to right,#134285 0%,#65318f 100%);
+    background: linear-gradient(to right,#fbff00 0%,#ff0000 100%);
   }
   .lines {
     margin-top: 20px;
@@ -168,7 +184,7 @@ export default {
     width: 100%;
   }
   .block {
-    border-bottom: 5px rgb(24, 24, 24) solid;
+    border-bottom: 5px solid rgb(241, 241, 241);
     padding: 100px;
     width: 100vw;
     height: 100%;
@@ -176,7 +192,7 @@ export default {
   .title {
     font-size: 3.5em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(230, 230, 230);
+    color: rgb(0, 40, 53);
   }
   .screen-title {
     font-size: 3.5em;
@@ -185,15 +201,15 @@ export default {
     position: relative;
   }
   .subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-top: 10px;
 
     padding-bottom: 10px;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(130, 130, 130)
+    color: rgb(100, 100, 100)
   }
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 1200px)  {
   .layout {
     width: 100%;
   }
@@ -230,7 +246,7 @@ export default {
   .title {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5em;
-    color: rgba(245, 245, 245);
+    color: rgb(0, 5, 78);
   }
   .subtitle {
     padding-top: 10px;
@@ -238,7 +254,7 @@ export default {
 
     font-size: 1.5em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(130, 130, 130)
+    color: rgb(100, 100, 100)
   }
   .span1 {
     height: 5px;

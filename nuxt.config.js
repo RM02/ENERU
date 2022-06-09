@@ -84,7 +84,7 @@ export default {
     }
   },
   server: {
-    host: "192.168.8.103"
+    // host: "192.168.43.68"
   },
   ignore: [
     '.nuxt', // buildDir

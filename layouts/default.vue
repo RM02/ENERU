@@ -16,7 +16,7 @@ export default {
         },
         {
           name: "Servicios",
-          path: ""
+          path: "services"
         },
         {
           name: "Contactos",
@@ -30,13 +30,13 @@ export default {
 <style scoped>
 .layout {
   width: 100vw;
-  background: #000;
+  background:white;
 }
 
 @media screen and (max-width: 500px)  {
   .layout {
     width: 100vw;
-    background: #000;
+    background: white;
   }
 }
 

@@ -39,10 +39,10 @@ export default {
 .logo {
   padding-left: 10px;
   height: 30px;
-  width: 50px;
+  width: 60px;
 }
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   background: none;
   color: aliceblue;
@@ -51,7 +51,7 @@ export default {
 }
 
 .item {
-  color: gray;
+  color: rgb(250, 250, 250);
   font-weight: bold;
 }
 .b-nav-item-dropdown {
