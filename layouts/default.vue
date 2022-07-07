@@ -1,8 +1,6 @@
 <template>
-  <div class="layout">
-    <Header :items="items"/>
+  <div>
       <Nuxt />
-    <Footer/>
   </div>
 </template>
 <script>
@@ -20,24 +18,10 @@ export default {
         },
         {
           name: "Contactos",
-          path: ""
+          path: "contactos"
         }
       ]
     }
   }
 }
 </script>
-<style scoped>
-.layout {
-  width: 100vw;
-  background:white;
-}
-
-@media screen and (max-width: 500px)  {
-  .layout {
-    width: 100vw;
-    background: white;
-  }
-}
-
-</style>

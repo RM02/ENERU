@@ -1,4 +1,7 @@
 export default {
+  head: {
+
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -15,12 +18,22 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo2.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo2.ico' },
+      { rel: 'icon', href: '/img/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/img/apple-touch-icon.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700' }
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/static/lib/bootstrap/css/bootstrap.min.css',
+    '~/static/lib/font-awesome/css/font-awesome.min.css',
+    '~/static/lib/animate/animate.min.css',
+    '~/static/lib/owlcarousel/assets/owl.carousel.min.css',
+    '~/static/lib/ionicons/css/ionicons.min.css',
+    '~/static/lib/lightbox/css/lightbox.min.css',
+    '~/static/css/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -84,7 +97,7 @@ export default {
     }
   },
   server: {
-    // host: "192.168.43.68"
+    // host: "192.168.43.35"
   },
   ignore: [
     '.nuxt', // buildDir
