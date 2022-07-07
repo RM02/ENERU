@@ -104,20 +104,20 @@
 
             <div class="col-lg-4 box">
               <i class="ion-ios-bookmarks-outline"></i>
-              <h4 class="title"><a href="">Interoperatividad</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="">Gestión de Calidad</a></h4>
+              <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
             </div>
 
             <div class="col-lg-4 box box-bg">
               <i class="ion-ios-stopwatch-outline"></i>
-              <h4 class="title"><a href="">Gestión de calidad</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="">Proyectos Ágiles</a></h4>
+              <!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p> -->
             </div>
 
             <div class="col-lg-4 box">
               <i class="ion-ios-heart-outline"></i>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="">Satisfación del Cliente</a></h4>
+              <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
             </div>
 
           </div>
@@ -205,14 +205,13 @@
       <!--==========================
         Call To Action Section
       ============================-->
-      <section id="call-to-action" class="wow fadeIn">
+<!--       <section id="call-to-action" class="wow fadeIn">
         <div class="container text-center">
           <h3>Call To Action</h3>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="cta-btn" href="#">Call To Action</a>
         </div>
-      </section><!-- #call-to-action -->
-
+      </section> --><!-- #call-to-action -->
       <!--==========================
         Skills Section
       ============================-->
@@ -410,51 +409,6 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-              <div class="portfolio-wrap">
-                <figure>
-                  <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </figure>
-
-                <div class="portfolio-info">
-                  <h4><a href="#">Card 1</a></h4>
-                  <p>Card</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-              <div class="portfolio-wrap">
-                <figure>
-                  <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-                  <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </figure>
-
-                <div class="portfolio-info">
-                  <h4><a href="#">Card 3</a></h4>
-                  <p>Card</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-              <div class="portfolio-wrap">
-                <figure>
-                  <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                  <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </figure>
-
-                <div class="portfolio-info">
-                  <h4><a href="#">Web 1</a></h4>
-                  <p>Web</p>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </div>
@@ -536,7 +490,7 @@
 
           <div class="section-header">
             <h3>Contactos</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <p>Comuniquese con nuestro equipo a través de los siguientes canales</p>
           </div>
 
           <div class="row contact-info">
